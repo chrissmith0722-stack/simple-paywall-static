@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Unlocked Content | Simple Paywall</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="wrap">
+    <header>
+      <h1>Member download</h1>
+      <p class="muted">Enter the access password from your purchase email.</p>
+    </header>
+
+    <section id="gate" class="card">
+      <label for="password">Password</label>
+      <div class="row">
+        <input id="password" type="password" autocomplete="current-password" placeholder="••••••••" />
+        <button id="unlock-btn" type="button">Unlock</button>
+      </div>
+      <p id="error" class="error" hidden>Incorrect password. Try again.</p>
+    </section>
+
+    <section id="content" class="card content" hidden>
+      <h2>You're in</h2>
+      <p>Thanks for purchasing. Your files:</p>
+      <ul>
+        <li><a href="#">Product-Guide.pdf</a> (replace with real link)</li>
+        <li><a href="#">Bonus-Checklist.md</a></li>
+      </ul>
+      <p class="muted">Tip: replace this block with your real deliverable links or embeds.</p>
+      <button id="lock-btn" type="button" class="secondary">Lock again</button>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
